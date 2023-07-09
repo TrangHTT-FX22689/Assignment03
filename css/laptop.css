@@ -1,0 +1,306 @@
+* {
+  margin: 0px;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  max-width: 1170px;
+  margin: 50px auto;
+  display: block;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+.section-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+p {
+  margin: 0;
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+}
+
+.date {
+  padding: 5px 15px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  background-color: var(--bs-primary);
+  border-radius: 30px;
+}
+
+/* Banner */
+#banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-img {
+  max-height: 500px;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.text-banner {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  text-shadow: -6px 7px 7px #2a2c248c;
+  transform: translate(0, -50%);
+}
+
+/* Navbar */
+#nav-bar {
+  text-align: center;
+  border-bottom: 1px #a5a5a5 solid;
+}
+
+#nav-bar div {
+  position: relative;
+  min-width: 170px;
+}
+
+#nav-bar a {
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-left: 1px #a5a5a5 solid;
+}
+
+#nav-bar nav > *:nth-child(5),
+#nav-bar nav > *:nth-child(2) {
+  border-right: 1px #a5a5a5 solid;
+}
+
+.navbar-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 7px solid #fff;
+  position: absolute;
+}
+
+#nav-bar a:hover,
+#nav-bar a:active {
+  background-color: var(--bs-dark);
+  color: #fff;
+}
+
+#nav-bar i {
+  color: var(--bs-blue);
+  margin-right: 5px;
+}
+
+/* About */
+#target,
+#personal-info {
+  padding: 50px;
+}
+
+#personal-info {
+  background-color: #dedede;
+}
+
+#about span {
+  font-weight: 600;
+}
+
+/* Job-infor */
+#job-info .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+  align-items: normal;
+}
+
+#job-info .item .grid {
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto 1fr;
+  gap: 0;
+  justify-content: center;
+
+  border: 1px solid #a5a5a5;
+  padding: 30px 20px;
+}
+
+#job-info .grid-colum {
+  grid-column: 1/3;
+}
+
+#job-info .grid-colum i {
+  font-size: 20px;
+  color: var(--bs-primary);
+  width: 50px;
+  height: 50px;
+  border: 1px var(--bs-primary) solid;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#job-info .grid-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  gap: 5px;
+
+  margin: 30px 0;
+}
+
+#job-info .content .flex-colum {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#job-info h4 {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.title-icon {
+  font-size: 30px;
+  text-align: center;
+}
+
+#job-info li::before {
+  content: "- ";
+}
+.ky-nang,
+.ngon-ngu p {
+  font-weight: bold;
+}
+
+.stick,
+.no-stick {
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  border-radius: 5px;
+}
+
+.stick {
+  background-color: var(--bs-primary);
+}
+
+.no-stick {
+  background-color: #a5a5a5;
+}
+
+/* chỉnh các cột giống mẫu ASM 02 */
+.hoat-dong {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.hoc-van {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.so-thich {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.ky-nang {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+/*  */
+
+/* Certificate */
+#certificate p {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#certificate li::before {
+  content: "- ";
+}
+
+#certificate .vien-trai {
+  border-left: 2px #d6c08d solid;
+}
+
+#certificate .vien-tren {
+  border-top: 2px #d6c08d solid;
+}
+
+/* Project */
+#project .d-lg-flex {
+  justify-content: space-around;
+}
+
+#project p {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#project .border {
+  border-collapse: collapse;
+}
+
+#project a:hover {
+  box-shadow: 0px 0px 20px 3px #2a2c248c;
+  transition: 0.5s ease;
+}
+
+/* Footer */
+.container {
+  margin: 50px 0;
+}
+
+#footer i {
+  font-size: 200%;
+}
+
+#footer i {
+  color: var(--bs-primary);
+}

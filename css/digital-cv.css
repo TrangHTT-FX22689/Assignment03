@@ -1,0 +1,20 @@
+p {
+  font-size: 1.1rem;
+}
+
+i {
+  font-size: 2rem;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #6710f29e;
+  color: #fff;
+  font-weight: 600;
+}
+
+.dashed-border {
+  border-bottom: 1px dashed var(--bs-primary);
+}

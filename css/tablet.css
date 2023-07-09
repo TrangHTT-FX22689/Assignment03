@@ -1,0 +1,21 @@
+@media (max-width: 768px) {
+  #nav-bar img {
+    display: none;
+  }
+  .items {
+    column-count: 2;
+    column-gap: 20px;
+  }
+
+  .content {
+    padding: 15px;
+    margin-top: 25px;
+  }
+  .item:first-child .content {
+    margin-top: 0;
+  }
+
+  #job-info .items {
+    display: block;
+  }
+}

@@ -1,0 +1,33 @@
+@media (max-width: 500px) {
+  .items {
+    column-count: 1;
+  }
+
+  #nav-bar .flex {
+    flex-direction: column;
+    align-items: start;
+  }
+  #nav-bar a {
+    border: none;
+    padding: 10px 30px;
+  }
+
+  #nav-bar,
+  #nav-bar nav > *:nth-child(5),
+  #nav-bar nav > *:nth-child(2) {
+    border: none;
+  }
+
+  .padding-mobile {
+    padding-top: 5px;
+  }
+
+  #footer i,
+  #footer a {
+    font-size: 150%;
+  }
+
+  #footer a {
+    display: none;
+  }
+}
